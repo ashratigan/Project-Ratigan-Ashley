@@ -9,8 +9,10 @@ https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
 .navbar {
     overflow: hidden;
     width: 100%;
-    background-color: black;
+    background-color: #3362c1;
+    /* opacity: .1; */
     color: white;
+    box-shadow: 0 3px 3px -2px lightgray;
 }
 .navbar a {
     float: right;
@@ -26,9 +28,10 @@ https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
     outline: none;
     padding: 14px 16px;
     color: inherit;
-    background-color: #3A3B3C;
+    background-color: #5779c7;
     margin: 0;
     margin-left: 67px;
+    /* opacity: 0.1; */
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: grey;
@@ -57,3 +60,26 @@ https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Title styles */
+#title {
+    text-align: center;
+}
+
+/* Foot styles */
+footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height: 2.5rem;
+    color: lightgray;
+    background-color: #3362c1;
+    box-shadow: 0px -3px 3px -2px lightgrey
+}
+footer > p {
+    font-size: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+
