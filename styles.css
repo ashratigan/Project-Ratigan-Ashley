@@ -61,6 +61,11 @@ https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
     display: block;
 }
 
+/* Header styles */
+header {
+    text-align: center;
+}
+
 /* Title styles */
 #title {
     text-align: center;
@@ -83,3 +88,15 @@ footer > p {
     margin-top: 20px;
 }
 
+/* Cat box styling */
+#catBox {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+    border: 4px solid rgba(2, 0, 19, 0.788);
+    border-radius: 10px;
+}
+#catBox > p {
+    margin: 10px;
+}
