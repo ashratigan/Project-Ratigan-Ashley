@@ -1,0 +1,22 @@
+{
+  "name": "project-ratigan-ashley",
+  "version": "1.0.0",
+  "description": "CS 290 project",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashratigan/Project-Ratigan-Ashley.git"
+  },
+  "author": "Ashley Ratigan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashratigan/Project-Ratigan-Ashley/issues"
+  },
+  "homepage": "https://github.com/ashratigan/Project-Ratigan-Ashley#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta2"
+  }
+}
