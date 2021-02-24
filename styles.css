@@ -21,8 +21,9 @@ footer {
     right:0;
     height: 2.5rem;
     color: lightgray;
-    background-color: #3362c1;
-    box-shadow: 0px -3px 3px -2px lightgrey
+    background-color: #2b2b2b;
+    /* background-color: #3362c1; */
+    /* box-shadow: 0px -3px 3px -2px lightgrey */
 }
 footer > p {
     font-size: 8px;
@@ -50,9 +51,13 @@ footer > p {
 .carousel-item img { height: 100%; object-fit: cover; object-position: center;}
 
 
-.carousel-caption {
+.carousel-caption-top {
     top: 0;
     bottom: auto;
+}
+.carousel-bottom {
+    bottom: 0;
+    /* top: auto; */
 }
 
 .carousel-title {
@@ -60,7 +65,10 @@ footer > p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     /* padding: 40px; */
     font-size: 3em;
-    color: #b2b2b2;
+    color: whitesmoke;
     text-shadow: 3px 3px 6px #2b2b2b;
     /* text-transform: uppercase; */
+}
+a {
+    color: inherit;
 }
