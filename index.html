@@ -39,70 +39,107 @@
                 </div>
             </div>
         </nav>
-        <!-- <div class="carouselContainer">
-        <div id="title"> -->
-            <!-- <h1>Like dogs? We do!</h1>
-            <h2>What are you waiting for?</h2> -->
-        <!-- </div> -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000"> -->
+
+        <!-- Bootstrap carousel -->
+        <!-- This carousel takes up the entire screen and the text for the webpage is displayed as captions on each slide -->
+
+        <!-- data interval sets the amount of time to delay between automatically cycling an item -->
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
+            <!-- Ordered list of the slides -->
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselIndicators" data-slide-to="4"></li>
             </ol>
+
+            <!-- Contains all the slides in the carousel -->
             <div class="carousel-inner">
+
+                <!-- Slid 1 -->
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="./images/dog1.jpg" alt="First slide">
+                    <!-- Image on the slide -->
+                    <img class="d-block w-100" src="./images/dog1.jpg" alt="Two dogs running">
+
+                    <!-- Header on top of slide -->
                     <div class="carousel-caption d-none d-md-block carousel-caption-top">
                         <h1 class="carousel-title">Like dogs?</h1>
                     </div>
+
+                    <!-- Footer with photo attribute on bottom of slide -->
                     <div class="carousel-caption d-none d-md-block">
                         <div class="carousel-bottom">
                             <p class="">Photo by <a href="https://unsplash.com/@alvannee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alvan Nee</a> on Unsplash</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Slide 2 -->
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/dog2.jpg" alt="Second slide">
+                    <!-- Image on the slide -->
+                    <img class="d-block w-100" src="./images/dog2.jpg" alt="Three dogs in a row">
+
+                    <!-- Header on top of slide -->
                     <div class="carousel-caption d-none d-md-block carousel-caption-top">
                         <h1 class="carousel-title">We do!</h1>
                     </div>
+
+                    <!-- Footer with photo attribute on bottom of slide -->
                     <div class="carousel-caption d-none d-md-block">
                         <div class="carousel-bottom">
                             <p class="">Photo by <a href="https://unsplash.com/@anoirchafik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Anoir Chafik</a> on Unsplash</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Slide 3 -->
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/dog3.jpg" alt="Third slide">
+                    <!-- Image on the slide -->
+                    <img class="d-block w-100" src="./images/dog3.jpg" alt="Corgi sitting in a tipi">
+
+                    <!-- Header on top of slide -->
                     <div class="carousel-caption d-none d-md-block carousel-caption-top">
                         <h1 class="carousel-title">What are you waiting for?</h1>
                     </div>
+
+                    <!-- Footer with photo attribute on bottom of slide -->
                     <div class="carousel-caption d-none d-md-block">
                         <div class="carousel-bottom">
                             <p class="">Photo by <a href="https://unsplash.com/@coleito?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Cole Keister</a> on Unsplash</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Slide 4 -->
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/dog4.jpg" alt="Third slide">
+                    <!-- Image on the slide -->
+                    <img class="d-block w-100" src="./images/dog4.jpg" alt="Three dogs lying down">
+
+                    <!-- Header on top of slide -->
                     <div class="carousel-caption d-none d-md-block carousel-caption-top">
                         <h1 class="carousel-title">Let's get you ready!</h1>
                     </div>
+
+                    <!-- Footer with photo attribute on bottom of slide -->
                     <div class="carousel-caption d-none d-md-block">
                         <div class="carousel-bottom">
                             <p class="">Photo by <a href="https://unsplash.com/@paulinel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pauline Loroy</a> on Unsplash</p>
                         </div>
                     </div>
                 </div>
+
+                <!-- Slide 5 -->
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/dog5.jpg" alt="Third slide">
+                    <!-- Image on the slide -->
+                    <img class="d-block w-100" src="./images/dog5.jpg" alt="One dog sitting, one dog lying down">
+
+                    <!-- Header on top of slide -->
                     <div class="carousel-caption d-none d-md-block carousel-caption-top">
                         <h1 class="carousel-title">For your new friend!</h1>
                     </div>
+
+                    <!-- Footer with photo attribute on bottom of slide -->
                     <div class="carousel-caption d-none d-md-block">
                         <div class="carousel-bottom">
                             <p class="">Photo by <a href="https://unsplash.com/@persnicketyprints?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Persnickety Prints</a> on Unsplash</p>
@@ -110,19 +147,19 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+
+            <!-- Forward and back buttons for carousel-->
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </a>
         </div>
-    <!-- </div> -->
 
         <!-- Footer -->
         <footer>
             <p>Favicon icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
         </footer>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
     </body>
 </html>
