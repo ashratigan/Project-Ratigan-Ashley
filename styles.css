@@ -1,6 +1,12 @@
+/* Body styles */
 body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    z-index: 1;
 }
 
 /* Header styles */
@@ -11,6 +17,11 @@ header {
 /* Title styles */
 #title {
     text-align: center;
+}
+
+/* Inherit color for links */
+a {
+    color: inherit;
 }
 
 /* Foot styles */
@@ -31,48 +42,31 @@ footer > p {
     margin-top: 20px;
 }
 
-/* Cat box styling */
-#catBox {
-    margin: 0 auto;
-    width: 800px;
-    height: 100px;
-    overflow: scroll;
-    border: 4px solid rgba(2, 0, 19, 0.788);
-    border-radius: 10px;
-}
-#catBox > p {
-    margin: 10px;
-}
-
-/* .carouselContainer { height: 100vh;} */
+/* Index (Home) page styling */
+/* Styling for carousel - make height screen size minus navbar height */
 .carousel { height: calc(100vh - 56px);}
 .carousel-inner,.carousel-item { height: 100%;}
 .carousel-item { background-color: #000;}
 .carousel-item img { height: 100%; object-fit: cover; object-position: center;}
 
-
 .carousel-caption-top {
     top: 0;
     bottom: auto;
 }
+
 .carousel-bottom {
     bottom: 0;
-    /* top: auto; */
 }
 
 .carousel-title {
     margin: 0 auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* padding: 40px; */
     font-size: 3em;
     color: whitesmoke;
     text-shadow: 3px 3px 6px #2b2b2b;
-    /* text-transform: uppercase; */
-}
-a {
-    color: inherit;
 }
 
+/* Styles for find page */
 .find-header {
     text-align: center;
     padding: 50px 0 20px 0;
@@ -88,7 +82,6 @@ a {
     height: calc(100vh - 56px);
     opacity: 50%;
     width: 100%;
-    /* height: 100%; */
 }
 
 .find-container {
@@ -97,7 +90,6 @@ a {
     color: white;
 
 }
-
 
 .find-text {
     position: absolute;
@@ -108,7 +100,6 @@ a {
     width: 600px;
   }
 
-
 .find-text-footer {
     position: absolute;
     top: 85%;
@@ -118,6 +109,7 @@ a {
     width: 100%;
 }
 
+/* Styles for ready page */
 .ready-form-container {
     padding: 50px;
     max-width: 800px;
@@ -131,6 +123,21 @@ a {
     text-align: center;
 }
 
+/* Styles for cat box on ready page */
+#catBox {
+    margin: 0 auto;
+    width: 800px;
+    height: 100px;
+    overflow: scroll;
+    border: 4px solid rgba(2, 0, 19, 0.788);
+    border-radius: 10px;
+}
+
+#catBox > p {
+    margin: 10px;
+}
+
+/* Styles for care page */
 .care-header {
     text-align: center;
     padding: 50px 0 0 0;
@@ -138,10 +145,6 @@ a {
 
 .care-list {
     padding: 50px;
-}
-
-.navbar {
-    z-index: 1;
 }
 
 .care-button {
