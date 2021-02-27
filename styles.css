@@ -143,3 +143,7 @@ a {
 .navbar {
     z-index: 1;
 }
+
+.care-button {
+    text-align: center;
+}
