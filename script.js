@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', bindButtons);
 
 function bindButtons(){
-  document.getElementById('formSubmit').addEventListener('click', function(event){
+  document.getElementById('formSubmit') && document.getElementById('formSubmit').addEventListener('click', function(event){
 
     const name = document.getElementById("form-name").value
     const email = document.getElementById("form-email").value
