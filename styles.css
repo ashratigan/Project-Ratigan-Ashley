@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
 }
 
 /* Navbar styles */
@@ -141,7 +142,7 @@ footer > p {
     margin: 10px;
 }
 
-.cat-info {
+.bottom-div {
     position: fixed;
     bottom: 90px;
     width: 100%;

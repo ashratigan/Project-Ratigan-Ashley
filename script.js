@@ -8,9 +8,10 @@ function bindButtons(){
     const email = document.getElementById("form-email").value
     const payload = name + " " + email
 
-    if (payload == " ") {
+    if (payload == " " || !payload.includes('@')) {
       event.preventDefault();
       document.getElementById('form-response').textContent = "Oops, you need to add a name and email!";
+      document.getElementById('form-response').style.color = "red"
     } else {
       event.preventDefault();
       const req = new XMLHttpRequest();
@@ -21,9 +22,11 @@ function bindButtons(){
           const response = JSON.parse(req.responseText);
           document.getElementById('ready-form-container').textContent = null;
           document.getElementById('form-response').textContent = "Success! Thanks for submitting your email";
+          document.getElementById('form-response').style.color = "green";
         } else {
           console.log("Error in network request: " + req.statusText);
           document.getElementById('form-response').textContent = "Oops, something went wrong!";
+          document.getElementById('form-response').style.color = "red"
         }});
       req.send(JSON.stringify(payload));
       }
@@ -64,8 +67,41 @@ function changeBodyColor(){
       }
 }
 
-function unbindButton(){
-    document.getElementById("careColor").removeEventListener("click", changeBodyColor);
+// Function to change text color on care page
+// Colors will go through rainbow 
+function changeTextColor(){
+    var toUpdate = document.body;
+    switch(toUpdate.style.color) {
+        case "black":
+            toUpdate.style.color = "rgb(75, 40, 130)";
+          break;
+        case "rgb(75, 40, 130)":
+            toUpdate.style.color = "rgb(46, 87, 147)";
+          break;
+        case "rgb(46, 87, 147)":
+            toUpdate.style.color = "rgb(23, 114, 69)";
+          break;
+        case "rgb(23, 114, 69)":
+            toUpdate.style.color = "rgb(196, 167, 5)";
+          break;
+        case "rgb(196, 167, 5)":
+            toUpdate.style.color = "rgb(201, 97, 22)";
+          break;
+        case "rgb(201, 97, 22)":
+            toUpdate.style.color = "rgb(193, 48, 28)";
+          break;
+        case "rgb(193, 48, 28)":
+            toUpdate.style.color = "black";
+          break;
+        default:
+            toUpdate.style.color = "rgb(75, 40, 130)";
+      }
 }
 
-document.getElementById("careColor") && document.getElementById("careColor").addEventListener("click", changeBodyColor);
+function unbindButton(){
+    document.getElementById("care-bg-color").removeEventListener("click", changeBodyColor);
+    document.getElementById("care-text-color").removeEventListener("click", changeBodyColor);
+}
+
+document.getElementById("care-bg-color") && document.getElementById("care-bg-color").addEventListener("click", changeBodyColor);
+document.getElementById("care-text-color") && document.getElementById("care-text-color").addEventListener("click", changeTextColor);
