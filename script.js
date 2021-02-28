@@ -15,7 +15,7 @@ function bindButtons(){
     } else {
       event.preventDefault();
       const req = new XMLHttpRequest();
-      req.open("POST", "http://httpbin.org/post");
+      req.open("POST", "https://httpbin.org/post");
       req.setRequestHeader('Content-Type', 'application/json');
       req.addEventListener('load',function(){
         if(req.status >= 200 && req.status < 400){
