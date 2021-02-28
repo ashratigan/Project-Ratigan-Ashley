@@ -45,9 +45,9 @@
         </header>
 
         <!-- Form -->
-        <div class="ready-form-container">
+        <div id="ready-form-container">
             <h3>Submit your email for more dog information!:</h3>
-            <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+            <form>
                 <div class="form-group">
                     <label for="form-name">Name</label>
                     <input type="text" class="form-control" id="form-name" placeholder="Enter name">
@@ -57,35 +57,23 @@
                     <input type="email" class="form-control" id="form-email" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
-                <label>Currently interested in adopting a dog:</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="dog-interest" id="radio-1" value="Yes" checked>
-                    <label class="form-check-label" for="radio-1">
-                        Yes
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="dog-interest" id="radio-2" value="No">
-                    <label class="form-check-label" for="radio-2">
-                        No
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="dog-interest" id="radio-3" value="Maybe">
-                    <label class="form-check-label" for="radio-3">
-                        Maybe
-                    </label>
-                  </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" id="formSubmit">Submit</button>
             </form>
+            
         </div>
 
+        <!-- Display text after submitting form -->
+        <h2 id="form-response"></h2>
+
+
         <!-- Scroll box with cat lorem ipsum -->
-        <h3 class="cat-header">Additional information about cats and other animals: </h3>
-        <div id="catBox">
-            <p>
-                Cat dog hate mouse eat string barf pillow no baths hate everything attack dog, run away and pretend to be victim rub face on everything. Time to go zooooom steal raw zucchini off kitchen counter poop on the floor, break a planter, sprint, eat own hair, vomit hair, hiss, chirp at birds, eat a squirrel, hide from fireworks, lick toe beans, attack christmas tree stretch out on bed. Play time play time, meowing chowing and wowing please let me outside pouty face yay! wait, it's cold out please let me inside pouty face oh, thank you rub against mommy's leg oh it looks so nice out, please let me outside again the neighbor cat was mean to me please let me back inside there's a forty year old lady there let us feast for sleep on my human's head. Eat the fat cats food nyaa nyaa. Plan steps for world domination.
-            </p>
+        <div class="cat-info">
+            <h3 class="cat-header">Additional information about cats and other animals: </h3>
+            <div id="catBox">
+                <p>
+                    Cat dog hate mouse eat string barf pillow no baths hate everything attack dog, run away and pretend to be victim rub face on everything. Time to go zooooom steal raw zucchini off kitchen counter poop on the floor, break a planter, sprint, eat own hair, vomit hair, hiss, chirp at birds, eat a squirrel, hide from fireworks, lick toe beans, attack christmas tree stretch out on bed. Play time play time, meowing chowing and wowing please let me outside pouty face yay! wait, it's cold out please let me inside pouty face oh, thank you rub against mommy's leg oh it looks so nice out, please let me outside again the neighbor cat was mean to me please let me back inside there's a forty year old lady there let us feast for sleep on my human's head. Eat the fat cats food nyaa nyaa. Plan steps for world domination.
+                </p>
+            </div>
         </div>
 
         <!-- Footer -->
